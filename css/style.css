@@ -1,0 +1,594 @@
+*{
+    margin:0;
+    padding:0;
+	user-select: none;
+}
+
+/*skrije scroll bar vendar se zmeri scrolla*/
+::-webkit-scrollbar{ 
+    display:none;
+}
+
+
+body{
+    font-family: "Roboto";
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    background-color: #71a5c9;
+}
+
+abbr{
+	border-bottom: none !important;
+	text-decoration: none;
+	cursor: pointer;
+}
+input{
+    margin:0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*GLAVA*/
+
+.header{
+    border-bottom: 2px solid #364d5d;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    text-align: center;
+    line-height: 6em;
+    height: 6em;
+    background-color: #deeaff;
+	
+
+}
+
+h1{
+	font-size:3em;
+	font-family: 'Roboto';
+    transition: transform 0.3s;
+	display:inline-block;
+	
+}
+/*-----------------------------------------------------------------------------*/
+
+/*JEDRO*/
+
+.main{
+	position: relative;
+    margin: 3em auto;
+    width: 50%;
+    height: 62em;
+	box-shadow: 5px 10px 18px #2B3C49;
+    border: 3px solid #364d5d;
+    border-radius: 9px;
+    background-color: #ffffff;
+	transition: width 0.3s;
+    
+}
+
+fieldset{
+	margin-top: 10px;
+	height: 85%;
+	line-height: 0;
+	width: 78%;
+	border: 2px solid #364d5d;
+	background-color: #f7faff;
+	border-radius: 5px;
+}
+legend{
+	padding: 0px 7px 0px 7px;
+	color: #364d5d;
+}
+
+textarea{
+	display: inline-block;
+	margin-top: 10px;
+	height: 85%;
+	width: 98%;
+	resize: none;
+	font-family: roboto;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+	padding-left: 4px;
+	background-color: #f7faff;
+	transition: border 0.2s;
+}
+textarea:hover{
+	background-color: white;
+}
+
+fieldset:hover{
+	border: 2px solid #DAA520;
+	background-color: white;
+	transition: border 0.2s;
+}
+label:hover{
+	cursor: pointer;
+}
+.izo{
+	color: black;
+	transition: color 0.3s;
+}
+.izo:hover{
+	color:  #364d5d;
+	transition: color 0.3s;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+/*VRSTICE*/
+
+.row{
+	position:relative;
+    width:100%;
+	height:4em;
+	transition: background-color 0.2s;
+}
+.row-one{
+    position:relative;
+    width:100%;
+	height:4em;
+	transition: background-color 0.2s;
+    
+}
+.row-end{
+	position:absolute;
+	text-align: center;
+	line-height: 4em;
+    width:100%;
+    height:4em;
+	bottom: 0px;
+	transition: background-color 0.2s;
+	border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+	
+   
+}
+.row-hobby{
+    position:relative;
+    width:100%;
+	height:6em;
+	transition: background-color 0.2s;
+	
+    
+}
+.row-texta{
+	position:relative;
+	display: flex;
+    width:100%;
+	text-align:center;
+	justify-content: center;
+	line-height: 15em;
+	height:9em;
+	transition: background-color 0.2s;
+    
+}
+.row-izobrazba{
+	position:relative;
+    width:100%;
+	height:4.8em;
+	transition: background-color 0.2s;
+  
+}
+.row-top{
+	position:relative;
+    width:100%;
+    height:2em;
+	text-align:center;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+.row-bot{
+	position:relative;
+    width:100%;
+    height:2em;
+	text-align:center;
+	line-height: 1.6em;
+}
+.row:hover{
+	transition: background-color 0.2s;
+	background-color:#deeaff;
+}
+.row-one:hover{
+	background-color:#deeaff;
+	transition: background-color 0.2s;    
+}
+.row-end:hover{
+	background-color:#deeaff;
+	transition: background-color 0.2s;
+}
+.row-hobby:hover{
+    background-color:#deeaff;
+	transition: background-color 0.2s;
+}
+.row-texta:hover{
+	background-color:#deeaff;  
+	transition: background-color 0.2s; 
+}
+.row-izobrazba:hover{
+	background-color:#deeaff;
+	transition: background-color 0.2s;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+/*STOLPCI*/
+
+/*1.Stolpec*/
+.column-one{
+    height:100%;
+    width:50%;
+    float:left;
+    text-align: left;
+    line-height: 4em;
+    cursor: default;
+}
+.column-name{
+	display: inline-block;
+	font-size: 1.4em;
+	padding-left: 6em;
+	
+	
+}
+.column-two-name{
+	display: inline-block;
+	font-size: 1.2em;
+	color: black;
+	transition: color 0.3s;
+}
+.column-one-hobby{
+	height:100%;
+    width:50%;
+    float:left;
+    text-align: left;
+    line-height: 4em;
+    cursor: default;
+	line-height: 6em;
+}
+.column-two-name:hover{
+	color: #364d5d;
+	transition: color 0.3s;
+}
+
+
+/* 2.Stolpec */
+.column-two{
+	height:100%;
+    width:50%;
+    float:right;
+    text-align: center;
+    line-height: 4em;
+    cursor: default;
+}
+.column-two-hobby{
+	display: flex;
+	flex: 3;
+	width:50%;
+	height:100%;
+	flex-wrap: wrap;
+	justify-content: center;
+    float:right;
+    text-align: center;
+    line-height: 1.9em;
+    cursor: default;
+	transition: line-height 0.3s;
+}
+.column-inhobby-one{
+	padding-left: 3em;
+	width: 25%;
+	height: 100%;
+	text-align: left;
+}
+.column-inhobby-two{
+	width: 33%;
+	height: 100%;
+	text-align: left;
+}
+.column-inhobby-three{
+	width: 25%;
+	height: 100%;
+	text-align: left;
+}
+
+
+.input-name{
+	display:inline-block;
+	outline: none;
+	height: 1.7em;
+	width: 17em;
+	padding-left: 5px;
+	background-color: #f7faff;
+	border: 1px solid black;
+	border-radius: 4px;
+	transition: border 0.2s;
+}
+.input-date{
+	display:inline-block;
+	font-family: "Roboto";
+	text-align: center;
+	outline: none;
+	height: 1.7em;
+	width: 17em;
+	padding-left: 5px;
+	background-color: #f7faff;
+	border: 1px solid black;
+	border-radius: 4px;
+	transition: border 0.2s;
+}
+.input-email{
+	display:inline-block;
+	outline: none;
+	height: 1.7em;
+	width: 9em;
+	background-color: #f7faff;
+	padding-left: 4px;
+	border: 2px solid black;
+	border-radius: 5px;
+	transition: border 0.2s;
+	
+}
+.input-gsm{
+	display:inline-block;
+	outline: none;
+	height: 1.7em;
+	width: 9em;
+	background-color: #f7faff;
+	padding-left: 8px;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: border 0.2s;
+}
+.drugo{
+	width: 6em;
+	outline: none;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding-left: 2px;
+	transition: border 0.2s;
+	background-color: #f7faff;
+	height: 1.2em;
+}
+.input-name:hover, .input-email:hover, .input-gsm:hover, .prefix:hover, .input-date:hover, .drzav:hover, .drugo:hover{
+	border: 1px solid #DAA520;
+	background-color: white;
+	transition: border 0.2s;
+}
+
+
+/* SELECT */
+
+.prefix{
+	outline:none;
+	text-align: center;
+	height:1.9em;
+	margin-right: 0.5em;
+	width: 7em;
+	border: 1px solid black;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	cursor: pointer;
+	background-color: #f7faff;
+	transition: border 0.2s;
+}
+.drzav{
+	outline:none;
+	text-align: center;
+	text-align-last: center;
+	height:1.9em;
+	width: 17.5em;
+	border: 1px solid black;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	cursor: pointer;
+	background-color: #f7faff;
+	transition: border 0.2s;
+}
+
+/* RADIO/CHECKBOX */
+
+.spol, .spol input[type="radio"]{
+	display:inline-block;
+	cursor: pointer;
+	padding-right: 10px;
+	
+}
+.hobby, .hobby input[type="checkbox"]{
+	padding-right: 3px;
+	display: inline-block;
+	cursor: pointer;
+}
+.izobrazba, .izobrazba input[type="radio"]{
+	display: inline-block;
+	padding-right: 1em;
+	cursor: pointer;
+}
+
+
+/* SUBMIT */
+
+.send{
+	cursor:pointer;
+	outline:none;
+	width:50%;
+	background-color: #f7faff;
+	height: 2em;
+	border: 2px solid #364d5d;
+	border-radius: 5px;
+	font-weight:bold;
+	font-family:"Roboto";
+	transition: border 0.2s;
+}
+.send:hover{
+	border: 2px solid #DAA520;
+	background-color: white;
+	transition: border 0.2s;
+}
+
+/*COUNTER*/
+.number{
+	/*margin-top: 10px;*/
+	font-size:0.8em;
+	text-align: right;
+	padding-right: 10px;
+	color: grey;
+
+}
+
+/*Mediaquery*/
+
+@media only screen and (max-width: 1600px) {
+  .column-two-hobby {
+    line-height: 1.9em;
+  }
+  .main{
+	  width: 60%;
+	  transition: width 0.3s;
+  }
+}
+@media only screen and (max-width: 1500px) {
+	.main{
+		width:65%;
+		
+		transition: width 0.3s;
+	}
+	.column-two-hobby{
+		line-height: 2em;
+		font-size: 1em;
+	}
+	.column-inhobby-three{
+		width: 33%;
+	}
+	.column-inhobby-two{
+		width: 35%;
+		
+	}
+	.column-inhobby-one{
+		padding-left: 0em;
+	}
+}
+@media only screen and (max-width: 1050px) {
+	.main{
+		width: 75%;
+		transition: width 0.3s;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.column-two-hobby{
+		line-height: 1.9em;
+		transition: line-height 0.3s;
+		font-size: 0.9em;
+	}
+}
+@media only screen and (max-width: 890px) {
+	.column-two-hobby{
+		line-height: 1.9em;
+		transition: line-height 0.3s;
+		font-size: 0.8em;
+	}
+	.column-inhobby-three{
+		width: 33%;
+	}
+	.column-inhobby-two{
+		width: 35%;
+	}
+	.hobby-three{
+		padding-left: 8px;
+	}
+	.row-bot{
+		font-size: 0.9em;
+	}
+}
+@media only screen and (max-width: 805px) {
+	.column-two-hobby{
+		line-height: 1.9em;
+		transition: line-height 0.3s;
+		font-size: 0.8em;
+	}
+	.column-inhobby-one{
+		width: 28%;
+	}
+	.column-inhobby-three{
+		width: 30%;
+	}
+	.column-inhobby-two{
+		width: 40%;
+	}
+	.hobby-three{
+		padding-left: 8px;
+	}
+	.drugo{
+		width: 4.5em;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.main{
+		min-height: 100%;
+		width: 100%;
+		border: none;
+		margin: 0;
+		border-radius: 0px;
+		
+		
+	}
+	.column-name{
+		font-size: 1.5em;
+	}
+	.header{
+		border-radius: 0px;
+	}
+	.drzav{
+		width: 13.5em;
+	}
+	.prefix{
+		width: 4.5em;
+	}
+	.input-name{
+		width: 9em;
+	}
+	.input-date{
+		width: 13em;
+	}
+	.column-two-hobby{
+		line-height: 1.9em;
+	}
+	.column-two-name{
+		font-size: 1em;
+	}
+	.input-gsm{
+		width: 7.5em;
+	}
+	.input-name{
+		width: 13em;
+	}
+	h1{
+		font-size: 2.5em;
+	}
+	.row-bot{
+		font-size: 0.9em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.row-end{
+		border-radius: 0px;
+	}
+}
+
+
+.submited input:required:invalid{
+    border: 2px solid #9e0a00;
+}
+
+
+
+
